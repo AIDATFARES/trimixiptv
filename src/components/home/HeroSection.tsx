@@ -13,6 +13,7 @@ export default function HeroSection() {
           alt="Trimix IPTV 4K Live Streaming Penthouse Display"
           priority
           fetchPriority="high"
+          quality={50}
           fill
           sizes="100vw"
           className="object-cover opacity-60"

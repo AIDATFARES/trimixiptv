@@ -19,6 +19,7 @@ export default function TopFeatureBar() {
                src="/about-trimix-sports-tv.webp" 
                alt="Trimix IPTV Live Multi-Sport and Entertainment Broadcast"
                fill
+               quality={65}
                sizes="(max-width: 1024px) 100vw, 50vw"
                className="object-cover group-hover:scale-105 transition-transform duration-700"
              />

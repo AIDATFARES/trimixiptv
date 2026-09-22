@@ -16,6 +16,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    optimizePackageImports: ["lucide-react"],
+  },
   async redirects() {
     return [
       // Post 1: Best Smart TV IPTV Players
