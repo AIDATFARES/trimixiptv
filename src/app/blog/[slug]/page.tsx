@@ -114,6 +114,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     })),
   } : null;
 
+  /* eslint-disable @typescript-eslint/no-unused-vars, @next/next/no-img-element */
   const markdownComponents = {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     h2: ({ node, ...props }: any) => <h2 className="text-2xl font-bold mt-12 mb-6 text-on-surface" {...props} />,
@@ -143,6 +144,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       </span>
     ),
   };
+  /* eslint-enable @typescript-eslint/no-unused-vars, @next/next/no-img-element */
 
   return (
     <main className="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-[1024px] mx-auto w-full relative z-10 text-format-blog">

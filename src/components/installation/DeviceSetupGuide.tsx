@@ -1,6 +1,6 @@
 "use client";
 
-import { Apple, Box, ChevronDown, HelpCircle, Monitor, Satellite, Smartphone, Tv } from "lucide-react";
+import { Apple, Box, HelpCircle, Monitor, Satellite, Smartphone, Tv } from "lucide-react";
 import { useState } from "react";
 
 const devices = [
