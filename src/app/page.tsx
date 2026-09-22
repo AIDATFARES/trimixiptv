@@ -2,6 +2,8 @@ import HeroSection from "@/components/home/HeroSection";
 import Link from "next/link";
 
 export const metadata = {
+  title: "Trimix IPTV – #1 Best IPTV Subscription 2026 | 4K Live TV",
+  description: "Enjoy uninterrupted 4K streaming from $4.2/mo. Access 50,000+ live channels, PPV sports & 120,000+ movies with zero freeze. Get your instant free trial today!",
   alternates: {
     canonical: "/",
   },

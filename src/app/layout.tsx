@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Trimix IPTV – Best IPTV Subscription 2026 | 4K Live TV & Sports",
-  description: "Stream 50,000+ live channels, 120,000+ movies & live sports in 4K with Trimix IPTV. Anti-freeze technology, instant activation & 99.9% uptime on all devices.",
+  title: "Trimix IPTV – #1 Best IPTV Subscription 2026 | 4K Live TV",
+  description: "Enjoy uninterrupted 4K streaming from $4.2/mo. Access 50,000+ live channels, PPV sports & 120,000+ movies with zero freeze. Get your instant free trial today!",
   metadataBase: new URL("https://www.trimixiptv4k.online"),
   alternates: {
     canonical: "/",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Trimix IPTV – Best IPTV Subscription 2026 | 4K Live TV & Sports",
-    description: "Stream 50,000+ live channels, 120,000+ movies & live sports in 4K with Trimix IPTV. Anti-freeze technology, instant activation & 99.9% uptime on all devices.",
+    title: "Trimix IPTV – #1 Best IPTV Subscription 2026 | 4K Live TV",
+    description: "Enjoy uninterrupted 4K streaming from $4.2/mo. Access 50,000+ live channels, PPV sports & 120,000+ movies with zero freeze. Get your instant free trial today!",
     url: "https://www.trimixiptv4k.online",
     siteName: "Trimix IPTV",
     locale: "en_US",
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trimix IPTV – Best IPTV Subscription 2026 | 4K Live TV & Sports",
-    description: "Stream 50,000+ live channels, 120,000+ movies & live sports in 4K with Trimix IPTV. Anti-freeze technology, instant activation & 99.9% uptime on all devices.",
+    title: "Trimix IPTV – #1 Best IPTV Subscription 2026 | 4K Live TV",
+    description: "Enjoy uninterrupted 4K streaming from $4.2/mo. Access 50,000+ live channels, PPV sports & 120,000+ movies with zero freeze. Get your instant free trial today!",
     images: [
       {
         url: "/hero-trimix-bg-2026.webp",
