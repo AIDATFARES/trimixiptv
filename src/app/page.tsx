@@ -14,7 +14,6 @@ import ChannelCategories from "@/components/home/ChannelCategories";
 import DeviceSupport from "@/components/home/DeviceSupport";
 import HowItWorksSection from "@/components/home/HowItWorksSection";
 import PricingSection from "@/components/home/PricingSection";
-import TestimonialsSection from "@/components/home/TestimonialsSection";
 import FAQSection from "@/components/home/FAQSection";
 import LatestArticlesSection from "@/components/home/LatestArticlesSection";
 import SupportCtaSection from "@/components/home/SupportCtaSection";
@@ -65,7 +64,6 @@ export default function Home() {
       <LatestArticlesSection />
 
       {/* Social Proof & Conversion */}
-      <TestimonialsSection />
       <SupportCtaSection />
     </main>
   );
