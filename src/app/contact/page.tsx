@@ -6,10 +6,10 @@ export default function Contact() {
   return (
     <main className="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full relative z-10">
       <div className="mx-auto mb-14 max-w-3xl text-center">
-        <span className="inline-flex rounded-full border border-[#00E5FF]/35 bg-[#00E5FF]/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#0088FF]">Contact Support</span>
+        <span className="inline-flex rounded-full border border-[#00F0FF]/35 bg-[#00F0FF]/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#00F0FF]">Contact Support</span>
         <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
           <span className="block text-white">Get in Touch with</span>
-          <span className="mt-1 block text-[#00E5FF]">Our Support Team.</span>
+          <span className="mt-1 block text-[#00F0FF]">Our Support Team.</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400">
           We&apos;re here to help you get the best streaming experience. Send us a message and we&apos;ll get back to you quickly.
@@ -20,16 +20,16 @@ export default function Contact() {
         {/* Contact Info Sidebar */}
         <div className="lg:col-span-4 flex flex-col gap-md">
           <div className="glass-panel rounded-xl p-lg flex flex-col items-center text-center">
-            <div className="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center mb-md">
-              <Mail className="text-primary w-8 h-8" />
+            <div className="w-16 h-16 rounded-full bg-[#00F0FF]/15 flex items-center justify-center mb-md">
+              <Mail className="text-[#00F0FF] w-8 h-8" />
             </div>
             <h2 className="font-title-md text-title-md text-on-surface mb-xs">Email Us</h2>
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-md">For general inquiries and support.</p>
             <a
-              className="text-primary font-medium hover:text-primary-fixed transition-colors"
-              href="mailto:support@iptvmap.online"
+              className="text-[#00F0FF] font-medium hover:text-[#A855F7] transition-colors"
+              href="mailto:support@trimixiptv4k.online"
             >
-              support@iptvmap.online
+              support@trimixiptv4k.online
             </a>
           </div>
 
@@ -43,7 +43,7 @@ export default function Contact() {
             </p>
             <a
               className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors flex items-center gap-xs"
-              href="https://wa.me/213552069874?text=Hello,%20I%20need%20support%20for%20IPTVMap."
+              href="https://wa.me/213552069874?text=Hello,%20I%20need%20support%20for%20Trimix%20IPTV."
               target="_blank"
               rel="noreferrer"
             >
@@ -57,7 +57,7 @@ export default function Contact() {
             </div>
             <h2 className="font-title-md text-title-md text-on-surface mb-xs">Response Time</h2>
             <p className="font-body-sm text-body-sm text-on-surface-variant">
-              We typically reply in <strong className="text-on-surface">Under 2 hours</strong> during standard business hours.
+              We typically reply in <strong className="text-on-surface">under 2 hours</strong> during standard business hours.
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Contact() {
         {/* Contact Form */}
         <div className="lg:col-span-8">
           <div className="glass-panel rounded-xl p-lg md:p-xl h-full">
-            <h2 className="font-title-md text-title-md text-on-surface mb-lg border-b border-outline-variant pb-sm">
+            <h2 className="font-title-md text-title-md text-on-surface mb-lg border-b border-white/10 pb-sm">
               Send a Message
             </h2>
             <form className="flex flex-col gap-md" onSubmit={(e) => e.preventDefault()}>
@@ -75,7 +75,7 @@ export default function Contact() {
                     Name
                   </label>
                   <input
-                    className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
+                    className="bg-black/40 border border-white/10 focus:border-[#00F0FF] rounded-lg px-md py-sm text-on-surface placeholder:text-stone-500 focus:outline-none transition-all"
                     id="name"
                     name="name"
                     placeholder="John Doe"
@@ -87,7 +87,7 @@ export default function Contact() {
                     Email Address
                   </label>
                   <input
-                    className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
+                    className="bg-black/40 border border-white/10 focus:border-[#00F0FF] rounded-lg px-md py-sm text-on-surface placeholder:text-stone-500 focus:outline-none transition-all"
                     id="email"
                     name="email"
                     placeholder="john@example.com"
@@ -101,7 +101,7 @@ export default function Contact() {
                   Subject
                 </label>
                 <input
-                  className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
+                  className="bg-black/40 border border-white/10 focus:border-[#00F0FF] rounded-lg px-md py-sm text-on-surface placeholder:text-stone-500 focus:outline-none transition-all"
                   id="subject"
                   name="subject"
                   placeholder="How can we help?"
@@ -114,7 +114,7 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all resize-none"
+                  className="bg-black/40 border border-white/10 focus:border-[#00F0FF] rounded-lg px-md py-sm text-on-surface placeholder:text-stone-500 focus:outline-none transition-all resize-none"
                   id="message"
                   name="message"
                   placeholder="Describe your issue or question in detail..."

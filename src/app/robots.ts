@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://www.iptvmap.online/sitemap.xml',
+    sitemap: 'https://www.trimixiptv4k.online/sitemap.xml',
   };
 }

@@ -19,17 +19,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
   if (!post) {
-    return { title: 'IPTVMap – Post Not Found' };
+    return { title: 'Trimix IPTV – Post Not Found' };
   }
 
   return {
-    title: `IPTVMap – ${post.title}`,
+    title: `Trimix IPTV – ${post.title}`,
     description: post.description,
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
-      title: `IPTVMap – ${post.title}`,
+      title: `Trimix IPTV – ${post.title}`,
       description: post.description,
       url: `/blog/${post.slug}`,
       ...(post.coverImage && {
@@ -38,12 +38,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             url: post.coverImage,
             width: 1200,
             height: 630,
-            alt: post.title,
+            alt: `Trimix IPTV – ${post.title}`,
+            type: 'image/jpeg',
           }
         ]
       }),
       type: 'article',
       publishedTime: post.date,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Trimix IPTV – ${post.title}`,
+      description: post.description,
+      ...(post.coverImage && {
+        images: [
+          {
+            url: post.coverImage,
+            alt: `Trimix IPTV – ${post.title}`,
+          }
+        ]
+      }),
     }
   };
 }
@@ -228,7 +242,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                       <img
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         alt={relPost.title}
-                        src={relPost.coverImage || "/blog/best-iptv-players-smart-tv.webp"}
+                        src={relPost.coverImage || "/blog/best-smart-tv-iptv-players.jpg"}
                       />
                     </div>
                     <div className="p-5 flex flex-col flex-grow bg-surface-container-lowest/50">

@@ -9,16 +9,17 @@ export default function TopFeatureBar() {
   ];
 
   return (
-    <section className="bg-[#070A0F] border-y border-white/10 relative z-10 py-16 sm:py-24 overflow-hidden">
+    <section className="bg-[#060813] border-y border-white/10 relative z-10 py-16 sm:py-24 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Left Side: TV Mockup Image Area */}
-          <div className="relative w-full aspect-[4/3] md:aspect-video lg:aspect-[4/3] xl:aspect-video rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(0, 229, 255,0.15)] border border-white/10 group">
+          <div className="relative w-full aspect-[4/3] md:aspect-video lg:aspect-[4/3] xl:aspect-video rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(0,240,255,0.15)] border border-white/10 group">
              <Image 
-               src="/about-tv-bg.webp" 
-               alt="IPTVMap Service on TV"
+               src="/about-trimix-sports-tv.webp" 
+               alt="Trimix IPTV Live Multi-Sport and Entertainment Broadcast"
                fill
+               sizes="(max-width: 1024px) 100vw, 50vw"
                className="object-cover group-hover:scale-105 transition-transform duration-700"
              />
              {/* Gradient Overlay for realism and contrast */}
@@ -29,29 +30,29 @@ export default function TopFeatureBar() {
                    <div className="w-10 h-10 bg-[#E50914] rounded-lg flex items-center justify-center font-bold text-white text-xs shadow-lg">NF</div>
                    <div className="w-10 h-10 bg-[#00A8E1] rounded-lg flex items-center justify-center font-bold text-white text-xs shadow-lg">PR</div>
                    <div className="w-10 h-10 bg-[#000000] border border-white/20 rounded-lg flex items-center justify-center font-bold text-white text-xs shadow-lg">HB</div>
-                   <div className="w-10 h-10 bg-gradient-to-br from-[#00E5FF] to-[#0088FF] rounded-lg flex items-center justify-center font-black text-black text-xs shadow-lg">4K</div>
+                   <div className="w-10 h-10 bg-gradient-to-br from-[#00F0FF] to-[#7C3AED] rounded-lg flex items-center justify-center font-black text-black text-xs shadow-lg">4K</div>
                 </div>
              </div>
           </div>
 
           {/* Right Side: Text Content */}
           <div className="flex flex-col">
-            <span className="text-[#00E5FF] font-bold tracking-[0.2em] text-xs uppercase mb-3 block">
+            <span className="text-[#00F0FF] font-bold tracking-[0.2em] text-xs uppercase mb-3 block">
               About the Service
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-white leading-[1.1] mb-6 tracking-tight">
-              What is <span className="text-[#00E5FF]">IPTVMap</span>? —<br className="hidden sm:block" /> Best IPTV in USA & Canada
+              What is <span className="text-[#00F0FF]">Trimix IPTV</span>? —<br className="hidden sm:block" /> Best IPTV in USA & Canada
             </h2>
             
             <div className="space-y-5 text-stone-300 text-sm sm:text-base leading-relaxed mb-10 font-medium">
               <p>
-                IPTVMap is the premier IPTV subscription service in the USA and Canada, trusted by thousands of subscribers from New York to Toronto, Los Angeles to Vancouver. We deliver live TV, on-demand movies, and live sports to viewers across the United States, Canada, and Europe — all over the internet with no cable box required.
+                Trimix IPTV is the premier IPTV subscription service in the USA and Canada, trusted by thousands of subscribers from New York to Toronto, Los Angeles to Vancouver. We deliver live TV, on-demand movies, and live sports to viewers across the United States, Canada, and Europe — all over the internet with no cable box required.
               </p>
               <p>
-                In particular, IPTVMap runs on any internet-connected device — Smart TVs, Firestick, Android, iOS, and MAG Box — giving you access to a massive library without long-term contracts or equipment rental.
+                In particular, Trimix IPTV runs on any internet-connected device — Smart TVs, Firestick, Android, iOS, and MAG Box — giving you access to a massive library without long-term contracts or equipment rental.
               </p>
               <p>
-                From breaking news and blockbuster movies to live football, basketball, and PPV events. It is built for modern households that want one flexible subscription covering everything cable used to do — at a fraction of the price. For reference, the official website is <span className="text-[#00E5FF] font-bold">iptvmap.online</span>.
+                From breaking news and blockbuster movies to live football, basketball, and PPV events. It is built for modern households that want one flexible subscription covering everything cable used to do — at a fraction of the price. For reference, the official website is <span className="text-[#00F0FF] font-bold">www.trimixiptv4k.online</span>.
               </p>
             </div>
 
@@ -59,8 +60,8 @@ export default function TopFeatureBar() {
             <div className="grid grid-cols-4 gap-4 border-t border-white/10 pt-8">
               {stats.map((stat, idx) => (
                 <div key={idx} className="flex flex-col gap-1.5">
-                  <span className="text-xl sm:text-2xl font-black text-white group-hover:text-[#00E5FF] transition-colors">{stat.value}</span>
-                  <span className="text-[10px] sm:text-xs font-bold text-[#00E5FF] uppercase tracking-widest">{stat.label}</span>
+                  <span className="text-xl sm:text-2xl font-black text-white group-hover:text-[#00F0FF] transition-colors">{stat.value}</span>
+                  <span className="text-[10px] sm:text-xs font-bold text-[#00F0FF] uppercase tracking-widest">{stat.label}</span>
                 </div>
               ))}
             </div>

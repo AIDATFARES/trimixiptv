@@ -7,20 +7,20 @@ import { useState } from "react";
 const faqs = [
   {
     id: 1,
-    question: "1. What is IPTVMap?",
+    question: "1. What is Trimix IPTV?",
     answer: (
       <>
-        IPTVMap is a premium IPTV service that offers live TV, VOD movies, TV series, and sports channels in high-quality streaming, including 4K. Check out our{" "}
+        Trimix IPTV is a premium IPTV service that offers live TV, VOD movies, TV series, and sports channels in high-quality streaming, including 4K. Check out our{" "}
         <Link
           href="/channels"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
         >
           live TV channels
         </Link>{" "}
         and{" "}
         <a
           href="#pricing"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors cursor-pointer"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors cursor-pointer"
         >
           IPTV subscription plans
         </a>
@@ -30,22 +30,22 @@ const faqs = [
   },
   {
     id: 2,
-    question: "2. Do I need a subscription to use IPTVMap?",
+    question: "2. Do I need a subscription to use Trimix IPTV?",
     answer: (
       <>
         Yes, a subscription is required. However, we offer a{" "}
         <a
-          href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20IPTVMap%20IPTV."
+          href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20Trimix%20IPTV."
           target="_blank"
           rel="noreferrer"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
         >
           free trial
         </a>{" "}
         so you can test the service before committing to our{" "}
         <a
           href="#pricing"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors cursor-pointer"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors cursor-pointer"
         >
           subscription plans
         </a>
@@ -55,13 +55,13 @@ const faqs = [
   },
   {
     id: 3,
-    question: "3. What devices are compatible with IPTVMap?",
+    question: "3. What devices are compatible with Trimix IPTV?",
     answer: (
       <>
-        IPTVMap works on Android TV, Firestick, Smart TVs, Android phones, tablets, and apps like Tivimate. Follow our step-by-step{" "}
+        Trimix IPTV works on Android TV, Firestick, Smart TVs, Android phones, tablets, and apps like TiviMate and IPTV Smarters. Follow our step-by-step{" "}
         <Link
           href="/installation"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
         >
           installation guides
         </Link>{" "}
@@ -77,7 +77,7 @@ const faqs = [
         Yes, we offer multi-device support. You can choose an{" "}
         <a
           href="#pricing"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors cursor-pointer"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors cursor-pointer"
         >
           IPTV subscription plan
         </a>{" "}
@@ -87,13 +87,13 @@ const faqs = [
   },
   {
     id: 5,
-    question: "5. Can I watch sports on IPTVMap?",
+    question: "5. Can I watch sports on Trimix IPTV?",
     answer: (
       <>
         Absolutely. We offer a wide selection of live sports channels, including major leagues and international events. Explore our full{" "}
         <Link
           href="/channels"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
         >
           channels catalog
         </Link>
@@ -109,7 +109,7 @@ const faqs = [
         We accept PayPal, cryptocurrency (such as Bitcoin), credit cards, and instant bank transfers for quick and secure payments. Contact our{" "}
         <Link
           href="/contact"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
         >
           support team
         </Link>{" "}
@@ -125,9 +125,9 @@ const faqs = [
         The service includes live TV channels, sports, movies, TV series, kids&apos; content, international channels, and more – all in HD or 4K quality. Learn more in our{" "}
         <Link
           href="/blog"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
         >
-          IPTV articles & guides
+          IPTV articles &amp; guides
         </Link>
         .
       </>
@@ -141,7 +141,7 @@ const faqs = [
         A VPN is not required but is recommended in some regions to ensure unrestricted access and added privacy. Read our{" "}
         <Link
           href="/faq"
-          className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+          className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
         >
           FAQ knowledge base
         </Link>{" "}
@@ -159,7 +159,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-[#070A0F] text-white relative z-10 border-t border-white/10 overflow-hidden">
+    <section className="py-20 bg-[#060813] text-white relative z-10 border-t border-white/10 overflow-hidden">
       <div className="max-w-[900px] mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mx-auto mb-14">
@@ -170,21 +170,21 @@ export default function FAQSection() {
             Find answers to common questions about our IPTV service, including{" "}
             <a
               href="#pricing"
-              className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors cursor-pointer"
+              className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors cursor-pointer"
             >
               subscriptions
             </a>
             ,{" "}
             <Link
               href="/installation"
-              className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+              className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
             >
               devices
             </Link>
             , streaming quality, payments, and more. If you need further help, our{" "}
             <Link
               href="/contact"
-              className="text-[#00E5FF] font-semibold hover:text-[#00E5FF] transition-colors"
+              className="text-[#00F0FF] font-semibold hover:text-[#A855F7] transition-colors"
             >
               support team
             </Link>{" "}
@@ -199,7 +199,7 @@ export default function FAQSection() {
             return (
               <div
                 key={faq.id}
-                className={`flex flex-col rounded-2xl overflow-hidden border transition-all duration-300 ${isOpen ? "border-[#00E5FF]/50 bg-[#0D0F12] shadow-[0_0_20px_rgba(0, 229, 255,0.1)]" : "border-white/10 glass-panel hover:border-[#00E5FF]/30"}`}
+                className={`flex flex-col rounded-2xl overflow-hidden border transition-all duration-300 ${isOpen ? "border-[#00F0FF]/50 bg-[#0c1020] shadow-[0_0_20px_rgba(0,240,255,0.12)]" : "border-white/10 glass-panel hover:border-[#00F0FF]/30"}`}
               >
                 <button
                   onClick={() => toggle(index)}
@@ -207,14 +207,14 @@ export default function FAQSection() {
                   aria-expanded={isOpen}
                 >
                   <div className="flex items-center gap-3">
-                    <HelpCircle className={`w-5 h-5 shrink-0 transition-colors duration-300 ${isOpen ? "text-[#00E5FF]" : "text-stone-400"}`} />
-                    <h3 className={`text-base sm:text-lg font-bold leading-snug transition-colors duration-300 ${isOpen ? "text-[#00E5FF]" : "text-white"}`}>
+                    <HelpCircle className={`w-5 h-5 shrink-0 transition-colors duration-300 ${isOpen ? "text-[#00F0FF]" : "text-stone-400"}`} />
+                    <h3 className={`text-base sm:text-lg font-bold leading-snug transition-colors duration-300 ${isOpen ? "text-[#00F0FF]" : "text-white"}`}>
                       {faq.question}
                     </h3>
                   </div>
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-300 shrink-0 ${
-                      isOpen ? "rotate-180 text-[#00E5FF]" : "text-stone-500"
+                      isOpen ? "rotate-180 text-[#00F0FF]" : "text-stone-500"
                     }`}
                   />
                 </button>
@@ -239,7 +239,7 @@ export default function FAQSection() {
         <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
           <Link
             href="/faq"
-            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-gradient-to-r from-[#00E5FF] to-[#0088FF] text-white font-bold text-xs sm:text-sm hover:from-[#0088FF] hover:to-[#00E5FF] transition-all duration-300 shadow-[0_4px_15px_rgba(0, 229, 255,0.3)] hover:scale-105 active:scale-95"
+            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] text-white font-bold text-xs sm:text-sm hover:from-[#7C3AED] hover:to-[#00F0FF] transition-all duration-300 shadow-[0_4px_15px_rgba(0,240,255,0.3)] hover:scale-105 active:scale-95"
           >
             <span>View Complete FAQ Knowledge Base</span>
             <ArrowRight className="w-4 h-4" />

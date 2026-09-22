@@ -1,33 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #070a0f;
+  --color-background: #060813;
   --color-on-background: #f8f9fa;
   
-  --color-surface: #0b0f17;
-  --color-surface-dim: #070a0f;
-  --color-surface-bright: #121824;
+  --color-surface: #0b0f1d;
+  --color-surface-dim: #060813;
+  --color-surface-bright: #13192b;
   
-  --color-surface-container-lowest: #070a0f;
-  --color-surface-container-low: #0b0f17;
-  --color-surface-container: #121824;
-  --color-surface-container-high: #182030;
-  --color-surface-container-highest: #1f293d;
+  --color-surface-container-lowest: #060813;
+  --color-surface-container-low: #0b0f1d;
+  --color-surface-container: #13192b;
+  --color-surface-container-high: #1a2238;
+  --color-surface-container-highest: #232d4b;
   --color-on-surface: #f8f9fa;
   --color-on-surface-variant: #94a3b8;
   
-  --color-primary: #00E5FF;
-  --color-on-primary: #070a0f;
-  --color-primary-container: #0088FF;
-  --color-on-primary-container: #070a0f;
+  --color-primary: #00F0FF;
+  --color-on-primary: #060813;
+  --color-primary-container: #7C3AED;
+  --color-on-primary-container: #ffffff;
   
-  --color-secondary: #0088FF;
-  --color-on-secondary: #070a0f;
-  --color-secondary-container: #38bdf8;
-  --color-on-secondary-container: #070a0f;
+  --color-secondary: #8B5CF6;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #A855F7;
+  --color-on-secondary-container: #ffffff;
   
-  --color-outline: #1e293b;
-  --color-outline-variant: #0f172a;
+  --color-outline: #1f253d;
+  --color-outline-variant: #111728;
 
   --color-error: #f43f5e;
   --color-on-error: #ffffff;
@@ -97,71 +97,77 @@
 }
 
 @layer components {
-  /* Glass panel replacement: Cyber obsidian cards with subtle cyan border */
+  /* Glass panel replacement: Cyber obsidian cards with subtle cyan & violet glow */
   .glass-panel {
-    background: rgba(11, 15, 23, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 229, 255, 0.15);
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    background: rgba(11, 15, 29, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(0, 240, 255, 0.16);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.55);
     transition: all 0.3s ease;
   }
   .glass-panel:hover {
     transform: translateY(-2px);
-    border-color: rgba(0, 229, 255, 0.35);
-    box-shadow: 0 8px 32px rgba(0, 229, 255, 0.15);
+    border-color: rgba(0, 240, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 240, 255, 0.15), 0 0 24px rgba(124, 58, 237, 0.18);
   }
 
   .text-glow {
-    text-shadow: 0 0 20px rgba(0, 229, 255, 0.45);
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.45);
   }
   .btn-glow:hover {
-    box-shadow: 0 8px 30px rgba(0, 229, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 240, 255, 0.35);
   }
 
   /* Primary CTA Buttons */
-  .btn-primary-voltra {
-    background: linear-gradient(135deg, #00E5FF 0%, #0088FF 100%);
-    color: #070a0f;
+  .btn-primary-voltra,
+  .btn-primary-trimix {
+    background: linear-gradient(135deg, #00F0FF 0%, #7C3AED 100%);
+    color: #ffffff;
     font-weight: 800;
     letter-spacing: 0.04em;
     border-radius: 9999px; /* pill shape */
-    box-shadow: 0 8px 30px rgba(0, 229, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 240, 255, 0.28);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .btn-primary-voltra:hover {
-    box-shadow: 0 10px 35px rgba(0, 229, 255, 0.45);
+  .btn-primary-voltra:hover,
+  .btn-primary-trimix:hover {
+    box-shadow: 0 10px 35px rgba(0, 240, 255, 0.45), 0 0 20px rgba(124, 58, 237, 0.35);
     transform: scale(1.02);
   }
-  .btn-primary-voltra:active {
+  .btn-primary-voltra:active,
+  .btn-primary-trimix:active {
     transform: scale(0.98);
   }
 
   /* Secondary Buttons */
-  .btn-secondary-voltra {
+  .btn-secondary-voltra,
+  .btn-secondary-trimix {
     background: transparent;
-    border: 1px solid #00E5FF;
+    border: 1px solid #00F0FF;
     color: #ffffff;
     font-weight: 600;
     border-radius: 9999px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .btn-secondary-voltra:hover {
-    background: rgba(0, 229, 255, 0.12);
+  .btn-secondary-voltra:hover,
+  .btn-secondary-trimix:hover {
+    background: rgba(0, 240, 255, 0.12);
     transform: translateY(-2px);
   }
 
   /* Text Gradients */
-  .text-gradient-primary {
-    background: linear-gradient(90deg, #00E5FF, #0088FF);
+  .text-gradient-primary,
+  .text-gradient-trimix {
+    background: linear-gradient(90deg, #00F0FF 0%, #A855F7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .text-gradient-secondary {
-    background: linear-gradient(90deg, #0088FF, #38bdf8);
+    background: linear-gradient(90deg, #8B5CF6 0%, #00F0FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -190,10 +196,10 @@
   }
   .text-format-marketing mark,
   .text-format-marketing .text-highlight {
-    @apply bg-transparent text-[#00E5FF] font-extrabold;
+    @apply bg-transparent text-[#00F0FF] font-extrabold;
   }
   .text-format-marketing .badge-text {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#00E5FF];
+    @apply inline-flex items-center gap-1.5 rounded-full border border-[#00F0FF]/30 bg-[#00F0FF]/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#00F0FF];
   }
 
   /* 2. BLOG & EDITORIAL PAGES (Blog listing, Article detail) */
@@ -218,7 +224,7 @@
     @apply italic text-stone-200;
   }
   .text-format-blog a {
-    @apply text-[#00E5FF] font-medium underline underline-offset-4 decoration-[#00E5FF]/40 hover:text-[#0088FF] hover:decoration-[#00E5FF] transition-colors;
+    @apply text-[#00F0FF] font-medium underline underline-offset-4 decoration-[#00F0FF]/40 hover:text-[#8B5CF6] hover:decoration-[#00F0FF] transition-colors;
   }
 
   /* 3. TECHNICAL GUIDES & INSTALLATION PAGES */
@@ -236,11 +242,11 @@
   }
   .text-format-technical code,
   .text-format-technical pre {
-    @apply font-mono text-[#00E5FF] bg-[#0b0f17] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
+    @apply font-mono text-[#00F0FF] bg-[#0b0f1d] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
   }
   .text-format-technical strong,
   .text-format-technical b {
-    @apply font-bold text-white underline decoration-[#0088FF]/50 decoration-2 underline-offset-2;
+    @apply font-bold text-white underline decoration-[#8B5CF6]/50 decoration-2 underline-offset-2;
   }
 
   /* 4. LEGAL & POLICY DOCUMENTS */
@@ -248,7 +254,7 @@
     @apply font-black uppercase tracking-tight text-white text-3xl sm:text-4xl lg:text-5xl;
   }
   .text-format-legal h2 {
-    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-[#00E5FF] pl-3;
+    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-[#00F0FF] pl-3;
   }
   .text-format-legal p {
     @apply text-stone-300 leading-7 font-normal text-sm sm:text-base mb-4 tracking-normal;
@@ -258,7 +264,7 @@
     @apply font-semibold text-white;
   }
   .text-format-legal a {
-    @apply font-semibold text-[#00E5FF] hover:text-[#0088FF] transition-colors underline underline-offset-2;
+    @apply font-semibold text-[#00F0FF] hover:text-[#8B5CF6] transition-colors underline underline-offset-2;
   }
 }
 

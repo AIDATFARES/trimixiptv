@@ -6,7 +6,6 @@ import {
   ChevronDown,
   ChevronUp,
   Headphones,
-  MonitorSmartphone,
   Server,
   ShieldCheck,
   ShoppingCart,
@@ -58,8 +57,8 @@ const planFeatures = [
   "Free Trial Everyday",
   "Customize groups",
   "Pay As You Go!",
-  "Credits Not Expire",
-  "24/7 support",
+  "Credits Never Expire",
+  "24/7 priority support",
   "Create Sub-Resellers",
 ];
 
@@ -157,8 +156,8 @@ export default function ResellerPageContent() {
 
   const handleOrderPanel = (plan?: CreditPlan) => {
     const message = plan
-      ? `Hello! I would like to order the IPTV Reseller Panel with ${plan.credits} Credits for $${plan.price}.`
-      : `Hello! I am interested in becoming an IPTV Reseller and would like to request panel access.`;
+      ? `Hello! I would like to order the Trimix IPTV Reseller Panel with ${plan.credits} Credits for $${plan.price}.`
+      : `Hello! I am interested in becoming a Trimix IPTV Reseller and would like to request panel access.`;
     window.open(
       `https://wa.me/213552069874?text=${encodeURIComponent(message)}`,
       "_blank",
@@ -167,7 +166,7 @@ export default function ResellerPageContent() {
   };
 
   const handleFreeTrial = () => {
-    const message = `Hello! I am interested in testing an IPTV Reseller Panel free trial account.`;
+    const message = `Hello! I am interested in testing a Trimix IPTV Reseller Panel free trial account.`;
     window.open(
       `https://wa.me/213552069874?text=${encodeURIComponent(message)}`,
       "_blank",
@@ -176,34 +175,34 @@ export default function ResellerPageContent() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#070A0F] py-16 sm:py-20 lg:py-24 text-format-marketing">
+    <section className="relative overflow-hidden bg-[#060813] py-16 sm:py-20 lg:py-24 text-format-marketing">
       {/* Background radial gradient */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[800px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-950/25 via-[#060814] to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[800px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-950/20 via-[#060813] to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         
         {/* HERO SECTION */}
         <header className="relative mx-auto max-w-4xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#00E5FF]">
+          <span className="inline-flex items-center gap-2 rounded-full border border-[#00F0FF]/30 bg-[#00F0FF]/10 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#00F0FF]">
             <Sparkles className="h-3.5 w-3.5" />
-            IPTV Reseller Program
+            Trimix IPTV Reseller Program
           </span>
 
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight text-white">
             <span className="block text-white">Become an IPTV Reseller</span>
-            <span className="mt-1 block text-[#00E5FF]">And Start Earning Easy Money.</span>
+            <span className="mt-1 block text-[#00F0FF]">And Start Earning High Margins.</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-stone-300 sm:text-base sm:leading-8">
-            Our IPTV reseller program helps you meet the expectations of your customers, enabling you to provide them with the best possible solutions. Join us and enjoy dozens of benefits with our program now.
+            Our Trimix IPTV reseller program helps you meet the expectations of your customers, enabling you to provide them with the best possible 4K streaming solutions. Join us and enjoy dozens of benefits with our program now.
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-4">
             <button
               onClick={handleFreeTrial}
-              className="rounded-full bg-[#00E5FF] px-8 py-3.5 text-base font-bold text-white shadow-[0_0_25px_rgba(0, 229, 255,0.4)] transition-all duration-300 hover:bg-[#0070F3] hover:shadow-[0_0_35px_rgba(0, 229, 255,0.6)] active:scale-[0.98]"
+              className="rounded-full bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] px-8 py-3.5 text-base font-bold text-white shadow-[0_0_25px_rgba(0,240,255,0.4)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(124,58,237,0.6)] active:scale-[0.98]"
             >
-              Free Trial
+              Free Reseller Trial
             </button>
           </div>
         </header>
@@ -213,7 +212,7 @@ export default function ResellerPageContent() {
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl font-black leading-tight tracking-tight">
               <span className="block text-white">Our Exclusive</span>
-              <span className="mt-1 block text-[#00E5FF]">IPTV Reseller Plans.</span>
+              <span className="mt-1 block text-[#00F0FF]">IPTV Reseller Plans.</span>
             </h2>
             <p className="mt-3 text-base font-bold text-stone-300">
               We provide you with the best servers at the right price
@@ -226,34 +225,34 @@ export default function ResellerPageContent() {
                 key={plan.id}
                 className={`relative flex flex-col rounded-3xl glass-panel p-6 text-white shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
                   plan.popular
-                    ? "border-4 border-[#00E5FF] shadow-[0_10px_40px_rgba(0, 229, 255,0.25)] scale-102"
+                    ? "border-2 border-[#00F0FF] shadow-[0_10px_40px_rgba(0,240,255,0.25)] scale-102"
                     : plan.bestValue
-                    ? "border-4 border-emerald-500 shadow-[0_10px_40px_rgba(16,185,129,0.2)]"
+                    ? "border-2 border-[#7C3AED] shadow-[0_10px_40px_rgba(124,58,237,0.25)]"
                     : "border border-white/10"
                 }`}
               >
                 {plan.popular && (
-                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#00E5FF] px-4 py-1 text-[11px] font-extrabold uppercase tracking-wider text-white shadow-md">
+                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] px-4 py-1 text-[11px] font-extrabold uppercase tracking-wider text-white shadow-md">
                     Most Popular
                   </span>
                 )}
                 {plan.bestValue && (
-                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#00E5FF] to-[#0088FF] px-4 py-1 text-[11px] font-extrabold uppercase tracking-wider text-white shadow-md">
+                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#7C3AED] to-[#A855F7] px-4 py-1 text-[11px] font-extrabold uppercase tracking-wider text-white shadow-md">
                     Best Value
                   </span>
                 )}
 
                 <div className="text-center">
-                  <span className="text-xs font-black uppercase tracking-widest text-[#00E5FF]">
-                    PREMIUM IPTV
+                  <span className="text-xs font-black uppercase tracking-widest text-[#00F0FF]">
+                    TRIMIX IPTV
                   </span>
                   <h3 className="mt-1 text-2xl font-black text-white">
-                    {plan.credits} Credit
+                    {plan.credits} Credits
                   </h3>
                 </div>
 
-                <div className="my-5 rounded-2xl bg-stone-100 py-4 text-center">
-                  <span className="text-4xl font-black text-[#00E5FF]">
+                <div className="my-5 rounded-2xl bg-black/40 border border-white/10 py-4 text-center">
+                  <span className="text-4xl font-black text-[#00F0FF]">
                     ${plan.price}
                   </span>
                 </div>
@@ -261,7 +260,7 @@ export default function ResellerPageContent() {
                 <ul className="flex-grow space-y-3 border-t border-white/5 pt-4 text-xs font-semibold text-stone-300">
                   {planFeatures.map((feature) => (
                     <li className="flex items-center gap-2" key={feature}>
-                      <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-red-100 text-[#00E5FF]">
+                      <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#00F0FF]/15 text-[#00F0FF]">
                         <Check className="h-3 w-3 stroke-[3]" />
                       </span>
                       <span>{feature}</span>
@@ -272,7 +271,7 @@ export default function ResellerPageContent() {
                 <button
                   type="button"
                   onClick={() => handleOrderPanel(plan)}
-                  className="mt-6 w-full rounded-2xl bg-[#00E5FF] py-3.5 text-sm font-extrabold text-white shadow-[0_4px_15px_rgba(0, 229, 255,0.3)] transition-all duration-300 hover:bg-[#0070F3] hover:shadow-[0_6px_20px_rgba(0, 229, 255,0.4)] active:scale-[0.98]"
+                  className="mt-6 w-full rounded-2xl bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] py-3.5 text-sm font-extrabold text-white shadow-[0_4px_15px_rgba(0,240,255,0.3)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(124,58,237,0.45)] active:scale-[0.98]"
                 >
                   Get A Panel
                 </button>
@@ -285,7 +284,7 @@ export default function ResellerPageContent() {
         <div className="mt-28">
           <h2 className="text-center text-3xl sm:text-4xl font-black leading-tight tracking-tight">
             <span className="block text-white">Advantages of</span>
-            <span className="mt-1 block text-[#00E5FF]">IPTV Reseller Program.</span>
+            <span className="mt-1 block text-[#00F0FF]">Trimix IPTV Reseller Program.</span>
           </h2>
 
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -294,9 +293,9 @@ export default function ResellerPageContent() {
               return (
                 <div
                   key={item.title}
-                  className="flex flex-col items-center text-center p-6 rounded-2xl border border-white/10 bg-[#070A0F]/90 backdrop-blur-md shadow-xl hover:border-[#00E5FF]/40 transition-colors"
+                  className="flex flex-col items-center text-center p-6 rounded-2xl border border-white/10 bg-[#0b0f1d] backdrop-blur-md shadow-xl hover:border-[#00F0FF]/40 transition-colors"
                 >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00E5FF]/15 text-[#00E5FF] mb-5">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00F0FF]/15 text-[#00F0FF] mb-5">
                     <Icon className="h-8 w-8" />
                   </div>
                   <h3 className="text-sm font-extrabold uppercase tracking-wider text-white">
@@ -315,7 +314,7 @@ export default function ResellerPageContent() {
         <div className="mx-auto mt-28 max-w-4xl">
           <h2 className="text-center text-3xl sm:text-4xl font-black leading-tight tracking-tight">
             <span className="block text-white">Frequently Asked</span>
-            <span className="mt-1 block text-[#00E5FF]">Questions & Answers.</span>
+            <span className="mt-1 block text-[#00F0FF]">Questions &amp; Answers.</span>
           </h2>
 
           <div className="mt-10 space-y-3">
@@ -324,25 +323,25 @@ export default function ResellerPageContent() {
               return (
                 <div
                   key={faq.question}
-                  className="overflow-hidden rounded-xl border border-white/10 bg-[#070A0F]/90 shadow-md transition-colors hover:border-[#00E5FF]/30"
+                  className="overflow-hidden rounded-xl border border-white/10 bg-[#0b0f1d] shadow-md transition-colors hover:border-[#00F0FF]/30"
                 >
                   <button
                     onClick={() => toggleFaq(index)}
-                    className="flex w-full items-center justify-between px-6 py-4 text-left font-bold text-white transition-colors hover:glass-panel/[0.03]"
+                    className="flex w-full items-center justify-between px-6 py-4 text-left font-bold text-white transition-colors hover:bg-white/[0.02]"
                   >
                     <h3 className="text-sm sm:text-base tracking-wide uppercase font-extrabold flex items-center gap-3">
-                      <span className="text-[#00E5FF]">▶</span>
+                      <span className="text-[#00F0FF]">▶</span>
                       {faq.question}
                     </h3>
                     {isOpen ? (
-                      <ChevronUp className="h-5 w-5 shrink-0 text-[#00E5FF]" />
+                      <ChevronUp className="h-5 w-5 shrink-0 text-[#00F0FF]" />
                     ) : (
                       <ChevronDown className="h-5 w-5 shrink-0 text-stone-400" />
                     )}
                   </button>
 
                   {isOpen && (
-                    <div className="border-t border-white/10 bg-[#0a0d0d]/80 px-6 py-4 text-sm text-stone-300 leading-relaxed">
+                    <div className="border-t border-white/10 bg-[#060813] px-6 py-4 text-sm text-stone-300 leading-relaxed">
                       {faq.answer}
                     </div>
                   )}
@@ -354,7 +353,7 @@ export default function ResellerPageContent() {
           <div className="mt-12 flex justify-center">
             <button
               onClick={() => handleOrderPanel()}
-              className="rounded-full bg-gradient-to-r from-[#00E5FF] to-[#0088FF] px-10 py-4 text-base font-extrabold uppercase tracking-wider text-white shadow-[0_0_30px_rgba(0, 229, 255,0.5)] transition-all duration-300 hover:bg-[#00E5FF] hover:shadow-[0_0_40px_rgba(0, 229, 255,0.7)] active:scale-[0.98]"
+              className="rounded-full bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] px-10 py-4 text-base font-extrabold uppercase tracking-wider text-white shadow-[0_0_30px_rgba(0,240,255,0.45)] transition-all duration-300 hover:shadow-[0_0_40px_rgba(124,58,237,0.7)] active:scale-[0.98]"
             >
               Become Reseller
             </button>

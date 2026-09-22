@@ -1,6 +1,6 @@
-# IPTVMap - Premium 4K IPTV Service & Global Streaming Platform
+# Trimix IPTV - Premium 4K IPTV Service & Global Streaming Platform
 
-Official website repository for **IPTVMap** (`www.iptvmap.online`).
+Official website repository for **Trimix IPTV** (`www.trimixiptv4k.online`).
 
 ## Features
 - **50,000+ Live Channels**: Global TV channels covering sports, news, movies, and entertainment.
@@ -10,7 +10,7 @@ Official website repository for **IPTVMap** (`www.iptvmap.online`).
 
 ## Tech Stack
 - **Framework**: Next.js 16 (App Router)
-- **Styling**: Tailwind CSS v4 with custom Cyber Navigation theme
+- **Styling**: Tailwind CSS v4 with custom Cyber Violet/Cyan theme
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
 - **Language**: TypeScript

@@ -29,7 +29,7 @@ export default function Home() {
       <BrandMarquee />
       <TopFeatureBar />
       <MovieStrips />
-      <div className="w-full bg-[#070A0F] pt-12 pb-2">
+      <div className="w-full bg-[#060813] pt-12 pb-2">
         <h3 className="text-center text-xl md:text-2xl font-bold text-white tracking-wide">
           Live Premium Sports
         </h3>
@@ -42,14 +42,14 @@ export default function Home() {
           "NFL-IPTV-1-1.webp", "CL-IPTV-1-1.webp", "Premier-League-1-1.webp",
           "Design-sans-titre-3-1.webp", "F1-IPTV-1-1.webp", "MLS-1.webp", "l2.webp", "l3.webp"
         ]}
-        cardClassName="flex-shrink-0 w-[120px] h-[160px] md:w-[140px] md:h-[185px] relative rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black hover:border-[#00E5FF]/60 hover:scale-105 transition-all duration-300 group"
+        cardClassName="flex-shrink-0 w-[120px] h-[160px] md:w-[140px] md:h-[185px] relative rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black hover:border-[#00F0FF]/60 hover:scale-105 transition-all duration-300 group"
         imageClassName="object-cover rounded-xl"
       />
 
       {/* Channel & Installation Quick Links */}
-      <div className="w-full bg-[#070A0F] py-6 px-4 text-center border-t border-white/5 relative z-20">
+      <div className="w-full bg-[#060813] py-6 px-4 text-center border-t border-white/5 relative z-20">
         <p className="text-center text-sm md:text-base text-stone-400 max-w-3xl mx-auto">
-          Explore the complete <Link prefetch={false} className="font-semibold text-[#00E5FF] hover:text-[#0088FF]" href="/channels">IPTVMap Channel List</Link> or follow our <Link prefetch={false} className="font-semibold text-[#00E5FF] hover:text-[#0088FF]" href="/installation">IPTVMap Setup Guide</Link> for step-by-step instructions.
+          Explore the complete <Link prefetch={false} className="font-semibold text-[#00F0FF] hover:text-[#A855F7]" href="/channels">Trimix IPTV Channel List</Link> or follow our <Link prefetch={false} className="font-semibold text-[#00F0FF] hover:text-[#A855F7]" href="/installation">Trimix IPTV Setup Guide</Link> for step-by-step instructions.
         </p>
       </div>
 

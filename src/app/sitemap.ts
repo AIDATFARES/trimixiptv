@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.iptvmap.online';
+  const baseUrl = 'https://www.trimixiptv4k.online';
 
   // Define static routes
   const staticRoutes: MetadataRoute.Sitemap = [

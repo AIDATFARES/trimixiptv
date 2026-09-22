@@ -38,19 +38,19 @@ export default function PricingSection() {
 
   function handleOrder(plan: Plan) {
     const text = encodeURIComponent(
-      `Hello! I would like to purchase the IPTVMap ${plan.duration} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
+      `Hello! I would like to purchase the Trimix IPTV ${plan.duration} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
     );
     window.open(`https://wa.me/213552069874?text=${text}`, "_blank", "noopener,noreferrer");
   }
 
   return (
-    <section id="pricing" className="relative overflow-hidden bg-[#070A0F] py-20 sm:py-24">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-950/25 via-[#060814] to-transparent" />
+    <section id="pricing" className="relative overflow-hidden bg-[#060813] py-20 sm:py-24">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-950/20 via-[#060813] to-transparent" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <header className="mx-auto max-w-3xl text-center">
-          <p className="inline-flex rounded-full border border-[#00E5FF]/30 bg-cyan-950/40 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#0088FF]">Premium IPTV plans</p>
+          <p className="inline-flex rounded-full border border-[#00F0FF]/30 bg-[#00F0FF]/10 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#00F0FF]">Premium IPTV plans</p>
           <h2 className="mt-5 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-            Choose your <span className="text-gradient-primary">IPTVMap plan</span>
+            Choose your <span className="text-gradient-trimix">Trimix IPTV plan</span>
           </h2>
           <p className="mt-5 text-xl font-bold tracking-wide text-white sm:text-2xl">Simple, transparent pricing</p>
           <p className="mt-2 text-sm text-stone-400 sm:text-base">No contracts. No hidden fees. Instant delivery after purchase.</p>
@@ -58,13 +58,13 @@ export default function PricingSection() {
 
         <div className="mx-auto mt-8 max-w-2xl" role="radiogroup" aria-label="Number of device connections">
           <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.15em] text-stone-400">Choose your connections</p>
-          <div className="grid grid-cols-3 rounded-2xl border border-[#00E5FF]/30 bg-[#070A0F]/90 p-1.5 shadow-[0_0_30px_rgba(0, 229, 255,0.1)]">
+          <div className="grid grid-cols-3 rounded-2xl border border-[#00F0FF]/30 bg-[#060813]/90 p-1.5 shadow-[0_0_30px_rgba(0,240,255,0.1)]">
             {[1, 2, 3].map((count) => {
               const selected = devices === count;
               return (
                 <button
                   aria-checked={selected}
-                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-gradient-to-r from-[#00E5FF] to-[#0088FF] text-white shadow-lg shadow-[#00E5FF]/30" : "text-stone-400 hover:text-white"}`}
+                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] text-white shadow-lg shadow-[#00F0FF]/30" : "text-stone-400 hover:text-white"}`}
                   key={count}
                   onClick={() => setDevices(count)}
                   role="radio"
@@ -79,24 +79,24 @@ export default function PricingSection() {
 
         <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 xl:gap-6 items-stretch">
           {plans.map((plan) => (
-            <article className={`relative flex flex-col rounded-3xl p-7 text-white transition-all duration-300 ${plan.popular ? "glass-panel border-2 border-[#00E5FF] shadow-[0_10px_40px_rgba(0, 229, 255,0.25)] md:-translate-y-3" : "glass-panel shadow-xl hover:-translate-y-1"}`} key={plan.id}>
-              {plan.popular && <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full border border-[#00E5FF] bg-gradient-to-r from-[#00E5FF] to-[#0088FF] px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-[0_0_15px_rgba(0, 229, 255,0.5)]">Most popular</span>}
+            <article className={`relative flex flex-col rounded-3xl p-7 text-white transition-all duration-300 ${plan.popular ? "glass-panel border-2 border-[#00F0FF] shadow-[0_10px_40px_rgba(0,240,255,0.25)] md:-translate-y-3" : "glass-panel shadow-xl hover:-translate-y-1"}`} key={plan.id}>
+              {plan.popular && <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full border border-[#00F0FF] bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-[0_0_15px_rgba(0,240,255,0.5)]">Most popular</span>}
               <h3 className="text-center text-2xl font-bold text-white">{plan.duration}</h3>
               <p className="mt-1 text-center text-sm text-stone-500 font-medium">Subscription</p>
               <div className="mt-3 flex items-baseline justify-center gap-2">
                 <p className="text-4xl font-black tracking-tight text-white">${priceFor(plan)}</p>
                 {plan.oldPrice && <p className="text-lg font-semibold text-stone-400 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>}
               </div>
-              <p className="mx-auto mt-3 rounded-full border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-3.5 py-1 text-center text-[11px] font-bold text-[#00E5FF]">{plan.saving}</p>
+              <p className="mx-auto mt-3 rounded-full border border-[#00F0FF]/30 bg-[#00F0FF]/10 px-3.5 py-1 text-center text-[11px] font-bold text-[#00F0FF]">{plan.saving}</p>
               <ul className="mt-6 flex-grow space-y-3 border-t border-white/5 pt-5">
-                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm font-medium text-stone-300" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-[#00E5FF]" strokeWidth={3} />{feature}</li>)}
+                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm font-medium text-stone-300" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-[#00F0FF]" strokeWidth={3} />{feature}</li>)}
               </ul>
-              <button className="mt-7 w-full rounded-full bg-gradient-to-r from-[#00E5FF] to-[#0088FF] py-3.5 text-sm font-bold text-white shadow-[0_8px_20px_rgba(0, 229, 255,0.3)] transition-all hover:from-[#0088FF] hover:to-[#00E5FF] hover:shadow-[0_10px_25px_rgba(0, 229, 255,0.4)] hover:scale-[1.02] active:scale-[0.98]" onClick={() => handleOrder(plan)} type="button">Buy now</button>
+              <button className="mt-7 w-full rounded-full bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] py-3.5 text-sm font-bold text-white shadow-[0_8px_20px_rgba(0,240,255,0.3)] transition-all hover:from-[#7C3AED] hover:to-[#00F0FF] hover:shadow-[0_10px_25px_rgba(0,240,255,0.4)] hover:scale-[1.02] active:scale-[0.98]" onClick={() => handleOrder(plan)} type="button">Buy now</button>
             </article>
           ))}
         </div>
 
-        <p className="mt-6 text-center text-sm text-stone-400">Reliable support for every IPTVMap subscription.</p>
+        <p className="mt-6 text-center text-sm text-stone-400">Reliable support for every Trimix IPTV subscription.</p>
 
         <div className="mx-auto mt-10 flex max-w-4xl flex-col items-center gap-7">
           <div aria-label="Supported payment methods" className="flex flex-wrap items-center justify-center gap-4">

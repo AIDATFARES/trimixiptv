@@ -1,6 +1,6 @@
 "use client";
 
-import { Apple, Box, ChevronDown, Download, HelpCircle, Monitor, Satellite, Smartphone, Tv } from "lucide-react";
+import { Apple, Box, ChevronDown, HelpCircle, Monitor, Satellite, Smartphone, Tv } from "lucide-react";
 import { useState } from "react";
 
 const devices = [
@@ -14,9 +14,9 @@ const devices = [
 
 const faqs = [
   { question: "1. How do I install IPTV on a Smart TV?", answer: "Install a compatible player such as Smart IPTV or IPTV Smarters from your TV's app store, then add the M3U URL or Xtream credentials from your welcome email." },
-  { question: "2. Where do I find my M3U URL?", answer: "Your M3U URL is included in the welcome email sent after activation. Contact support if you need it resent." },
+  { question: "2. Where do I find my M3U URL?", answer: "Your M3U URL is included in the welcome email or WhatsApp message sent after activation. Contact support if you need it resent." },
   { question: "3. How can I reduce buffering?", answer: "Use a stable internet connection, restart your device and router, and select an appropriate quality setting for your connection." },
-  { question: "4. How do I set up IPTVMap using Xtream Codes API?", answer: "Choose Xtream Codes API in your player and enter the server URL, username, and password from your welcome email." },
+  { question: "4. How do I set up Trimix IPTV using Xtream Codes API?", answer: "Choose Xtream Codes API in your player and enter the server URL, username, and password from your welcome email." },
   { question: "5. Can I connect using a MAC address (Portal URL)?", answer: "Yes. MAG and compatible portal devices can be activated using their MAC address. Send it to our support team for assistance." },
 ];
 
@@ -36,23 +36,23 @@ export default function DeviceSetupGuide() {
         {devices.map((item) => {
           const Icon = item.icon;
           const active = item.id === activeDevice;
-          return <button className={`inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${active ? "border-[#00E5FF] bg-gradient-to-r from-[#00E5FF] to-[#0088FF] text-white shadow-lg shadow-[#00E5FF]/30" : "border-white/15 glass-panel/[0.03] text-stone-400 hover:border-[#00E5FF]/60 hover:text-white"}`} key={item.id} onClick={() => setActiveDevice(item.id)} type="button"><Icon className="h-4 w-4" />{item.label}</button>;
+          return <button className={`inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${active ? "border-[#00F0FF] bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] text-white shadow-lg shadow-[#00F0FF]/30" : "border-white/15 glass-panel/[0.03] text-stone-400 hover:border-[#00F0FF]/60 hover:text-white"}`} key={item.id} onClick={() => setActiveDevice(item.id)} type="button"><Icon className="h-4 w-4" />{item.label}</button>;
         })}
       </div>
 
-      <article className="mx-auto max-w-[940px] rounded-3xl border border-white/10 bg-[#0B0F17]/90 p-7 sm:p-10 shadow-2xl">
+      <article className="mx-auto max-w-[940px] rounded-3xl border border-white/10 bg-[#0B0F1D]/90 p-7 sm:p-10 shadow-2xl">
         <div className="flex items-center gap-3 border-b border-white/10 pb-5">
-          <DeviceIcon className="h-7 w-7 text-[#00E5FF]" />
+          <DeviceIcon className="h-7 w-7 text-[#00F0FF]" />
           <h3 className="text-xl font-bold text-white sm:text-2xl">{device.title}</h3>
         </div>
         <div className="mt-8 space-y-8">
           <SetupStep number="1" title="Install IPTV App">Navigate to your device&apos;s app store, find <strong>{device.app}</strong>, and install the app.</SetupStep>
-          <div className="rounded-xl border-l-4 border-[#00E5FF] bg-cyan-950/30 px-4 py-3 text-sm leading-5 text-stone-300">{device.note}</div>
-          <SetupStep number="2" title="Configure your playlist">Launch the IPTV app, open its settings, and enter the playlist details supplied in your welcome email.</SetupStep>
-          <CodeLine label="M3U URL" text="Use the secure playlist URL from your welcome email" />
+          <div className="rounded-xl border-l-4 border-[#00F0FF] bg-cyan-950/30 px-4 py-3 text-sm leading-5 text-stone-300">{device.note}</div>
+          <SetupStep number="2" title="Configure your playlist">Launch the IPTV app, open its settings, and enter the playlist details supplied in your welcome message.</SetupStep>
+          <CodeLine label="M3U URL" text="Use the secure playlist URL from your welcome email or message" />
           <SetupStep number="3" title="Add EPG (optional)">Enable the TV guide by entering your EPG URL in the app&apos;s settings menu.</SetupStep>
-          <CodeLine label="EPG URL" text="Use the EPG URL from your welcome email" />
-          <SetupStep number="4" title="Start Watching">Reopen the app to load your playlist and start watching IPTVMap channels.</SetupStep>
+          <CodeLine label="EPG URL" text="Use the EPG URL from your welcome message" />
+          <SetupStep number="4" title="Start Watching">Reopen the app to load your playlist and start watching Trimix IPTV channels.</SetupStep>
         </div>
       </article>
 
@@ -60,14 +60,14 @@ export default function DeviceSetupGuide() {
         <h2 className="mb-8 text-center text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Installation FAQ</h2>
         <div className="grid gap-5 md:grid-cols-2">
           {faqs.map((faq) => (
-            <div className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-[#00E5FF]/40 transition-colors" key={faq.question}>
-              <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center gap-3">
-                <HelpCircle className="w-5 h-5 text-[#00E5FF] shrink-0" />
+            <div className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0c1020]/90 shadow-xl hover:border-[#00F0FF]/40 transition-colors" key={faq.question}>
+              <div className="bg-[#12182c] border-b border-white/10 px-5 py-4 flex items-center gap-3">
+                <HelpCircle className="w-5 h-5 text-[#00F0FF] shrink-0" />
                 <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
                   {faq.question}
                 </h3>
               </div>
-              <div className="p-5 text-sm text-stone-300 leading-relaxed bg-[#0f1419]/60 flex-1">
+              <div className="p-5 text-sm text-stone-300 leading-relaxed bg-[#0c1020]/60 flex-1">
                 <p>{faq.answer}</p>
               </div>
             </div>
@@ -79,9 +79,9 @@ export default function DeviceSetupGuide() {
 }
 
 function SetupStep({ children, number, title }: { children: React.ReactNode; number: string; title: string }) {
-  return <div className="flex gap-4"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#00E5FF] to-[#0088FF] text-sm font-extrabold text-white shadow-md">{number}</span><div><h4 className="text-base font-bold text-white sm:text-lg">{title}</h4><p className="mt-1 text-sm leading-6 text-stone-300">{children}</p></div></div>;
+  return <div className="flex gap-4"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#00F0FF] to-[#7C3AED] text-sm font-extrabold text-white shadow-md">{number}</span><div><h4 className="text-base font-bold text-white sm:text-lg">{title}</h4><p className="mt-1 text-sm leading-6 text-stone-300">{children}</p></div></div>;
 }
 
 function CodeLine({ label, text }: { label: string; text: string }) {
-  return <div className="rounded-xl bg-black/40 border border-white/5 px-4 py-3 font-mono text-xs text-stone-400"><span className="font-bold text-[#00E5FF]">{label}:</span> {text}</div>;
+  return <div className="rounded-xl bg-black/40 border border-white/5 px-4 py-3 font-mono text-xs text-stone-400"><span className="font-bold text-[#00F0FF]">{label}:</span> {text}</div>;
 }
